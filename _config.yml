@@ -9,14 +9,31 @@ nav:
 
 # Menu 目錄
 menu:
-  # Home: / || fas fa-home
-  # Archives: /archives/ || fas fa-archive
-  # Tags: /tags/ || fas fa-tags
-  # Categories: /categories/ || fas fa-folder-open
+  首页: / || fas fa-home
+  资源分享 || fas fa-leaf:
+    源码分享: /categories/源码资源/ || fas fa-tree
+    商业案例: /categories/商业案例/ || fas fa-key
+    课程分享: /categories/课程资源/ || fas fa-file
+    项目资源: /categories/项目资源/ || fas fa-train
+  技术教程: /categories/技术教程/ || fas fa-archive
+  读书笔记 || fas fa-book:
+    笔记: /categories/读书笔记/ || fas fa-bookmark
+    诗词: /Poetry/ || fas fa-pencil-square
+    事典: /categories/事典/ || fas fa-history
+    文案: /Wenan/ || fas fa-bold
+  本地生活 || fas fa-refresh:
+    今日热点: /categories/今日热点/ || fas fa-newspaper
+    今日油价: /今日油价/ || fas fa-inbox
+#    壁纸合集: /Gallery/ || fas fa-images
+
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  
+  #  时间轴: /archives/ || fas fa-archive
   # List||fas fa-list:
   #   Music: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
-  # Link: /link/ || fas fa-link
+  # 友情链接: /link/ || fas fa-link
   # About: /about/ || fas fa-heart
 
 # Code Blocks (代碼相關)
@@ -33,14 +50,16 @@ code_word_wrap: false
 # formal:
 #   icon: link || the description || color
 social:
-  # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
-  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
+  fab fa-github: https://github.com/i-stack || Github
+  fas fa-envelope: mailto:shoubing.stack@gmail.com || Email
+  fab fa-weixin: https://freelibrary.top/img/wechatQR.jpeg || 微信
+  fab fa-qq: https://freelibrary.top/img/qqQR.jpeg || QQ
 
 # Image (圖片設置)
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /img/favicon.png
+favicon: /images/icon.png
 
 # Avatar (頭像)
 avatar:
@@ -54,7 +73,7 @@ disable_top_img: false
 index_img:
 
 # If the banner of page not setting, it will show the top_img
-default_top_img:
+default_top_img: /images/bg_image.jpg
 
 # The banner image of archive page
 archive_img:
@@ -163,14 +182,14 @@ post_copyright:
 
 # Sponsor/reward
 reward:
-  enable: false
+  enable: true
   QR_code:
-    # - img: /img/wechat.jpg
-    #   link:
-    #   text: wechat
-    # - img: /img/alipay.jpg
-    #   link:
-    #   text: alipay
+    - img: /images/payQR/wechat.png
+      link:
+      text: wechat
+    - img: /images/payQR/alipay.png
+      link:
+      text: alipay
 
 # Post edit
 # Easily browse and edit blog source code online.
@@ -231,7 +250,7 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/i-stack
   card_announcement:
     enable: true
     content: This is my Blog
@@ -293,7 +312,7 @@ newest_comments:
 translate:
   enable: false
   # The text of a button
-  default: 繁
+  default: 简
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
   defaultEncoding: 2
   # Time delay
@@ -361,7 +380,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
   # Preload the search data when the page loads.
   preload: false
   # Show top n results per article, show all results by setting to -1
@@ -390,7 +409,7 @@ addThis:
 # Share.js
 # https://github.com/overtrue/share.js
 sharejs:
-  enable: true
+  enable: false
   sites: facebook,twitter,wechat,weibo,qq
 
 # AddToAny
@@ -553,7 +572,7 @@ crisp:
 messenger:
   enable: false
   pageID:
-  lang: zh_TW # Language en_US/zh_CN/zh_TW and so on
+  lang: zh_CN # Language en_US/zh_CN/zh_TW and so on
 
 # Analysis
 # --------------------------------------
@@ -595,10 +614,10 @@ google_adsense:
 # --------------------------------------
 
 site_verification:
-  # - name: google-site-verification
-  #   content: xxxxxx
-  # - name: baidu-site-verification
-  #   content: xxxxxxx
+  - name: google-site-verification
+    content: G-WC9BJCZB6X
+  - name: baidu-site-verification
+    content: d7081b62deb4d103aca073589b382ffd
 
 # Beautify/Effect (美化/效果)
 # --------------------------------------
@@ -629,7 +648,7 @@ site_verification:
 # The position of site info, eg: 300px/300em/300rem/10% (主頁標題距離頂部距離)
 index_site_info_top:
 # The height of top_img, eg: 300px/300em/300rem (主頁top_img高度)
-index_top_img_height:
+index_top_img_height: 360px
 
 # The user interface setting of category and tag page (category和tag頁的UI設置)
 # index - same as Homepage UI (index 值代表 UI將與首頁的UI一樣)
@@ -643,7 +662,7 @@ tag_ui: # 留空或 index
 background:
 
 # Footer Background
-footer_bg: false
+footer_bg: true
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
 rightside-bottom:
@@ -760,7 +779,7 @@ subtitle:
 
 # Loading Animation (加載動畫)
 preloader:
-  enable: false
+  enable: true
   # source
   # 1. fullpage-loading
   # 2. pace (progress bar)
