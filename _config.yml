@@ -18,14 +18,13 @@ menu:
   技术教程: /categories/技术教程/ || fas fa-archive
   读书笔记 || fas fa-book:
     笔记: /categories/读书笔记/ || fas fa-bookmark
-    诗词: /Poetry/ || fas fa-pencil-square
+    诗词: /pages/poetry/ || fas fa-pencil-square
     事典: /categories/事典/ || fas fa-history
-    文案: /Wenan/ || fas fa-bold
+    文案: /pages/wenan/ || fas fa-bold
   本地生活 || fas fa-refresh:
     今日热点: /categories/今日热点/ || fas fa-newspaper
-    今日油价: /今日油价/ || fas fa-inbox
-#    壁纸合集: /Gallery/ || fas fa-images
-
+    今日油价: /pages/todayOil/ || fas fa-inbox
+#    壁纸合集: /pages/gallery/ || fas fa-images
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
   
@@ -33,7 +32,7 @@ menu:
   # List||fas fa-list:
   #   Music: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
-  # 友情链接: /link/ || fas fa-link
+  # 友情链接: /pages/link/ || fas fa-link
   # About: /about/ || fas fa-heart
 
 # Code Blocks (代碼相關)
@@ -846,14 +845,14 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   exclude:
     # - xxxx
     # - xxxx
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
-  enable: false
+  enable: true
   per_page: true
 
 # Snackbar (Toast Notification 彈窗)
@@ -918,6 +917,7 @@ inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
+    #  - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
     # - <script src="xxxx"></script>
 
 # CDN
