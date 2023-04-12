@@ -24,7 +24,7 @@ menu:
   本地生活 || fas fa-refresh:
     今日热点: /categories/今日热点/ || fas fa-newspaper
     今日油价: /pages/todayOil/ || fas fa-inbox
-    便民查询: /pages/便民查询/查询小工具/ || fas fa-times
+    便民查询: /pages/便民查询/ || fas fa-times
 #    壁纸合集: /pages/gallery/ || fas fa-images
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
