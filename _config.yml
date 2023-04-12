@@ -24,6 +24,7 @@ menu:
   本地生活 || fas fa-refresh:
     今日热点: /categories/今日热点/ || fas fa-newspaper
     今日油价: /pages/todayOil/ || fas fa-inbox
+    便民查询: /pages/便民查询/查询小工具/ || fas fa-times
 #    壁纸合集: /pages/gallery/ || fas fa-images
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
@@ -251,15 +252,15 @@ aside:
       text: Follow Me
       link: https://github.com/i-stack
   card_announcement:
-    enable: true
+    enable: false
     content: This is my Blog
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
-    sort: date # date or updated
+    sort: updated # date or updated
     sort_order: # Don't modify the setting unless you know how it works
   card_categories:
-    enable: true
+    enable: false
     limit: 8 # if set 0 will show all
     expand: none # none/true/false
     sort_order: # Don't modify the setting unless you know how it works
