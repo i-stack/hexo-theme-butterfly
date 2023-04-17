@@ -100,3 +100,15 @@ hexo.extend.helper.register('isImgOrUrl', function (path) {
   }
   return false
 })
+
+hexo.extend.helper.register('page_keywords', function () {
+  const { config, page } = this
+  let keywords = page.keywords || page.content || page.title || config.description
+
+  if (keywords) {
+    keywords = escapeHTML(stripHTML(keywords)
+      .trim()
+    ).replace(/\n/g, ' ')
+    return keywords
+  }
+})
