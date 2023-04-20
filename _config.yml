@@ -25,9 +25,9 @@ menu:
     今日热点: /categories/今日热点/ || fas fa-newspaper
     今日油价: /pages/todayOil/ || fas fa-inbox
     便民查询: /pages/query/ || fas fa-times
-#    壁纸合集: /pages/gallery/ || fas fa-images
+    壁纸合集: /pages/gallery/ || fas fa-images
   标签: /tags/ || fas fa-tags
-  分类: /categories/ || fas fa-folder-open
+  # 分类: /categories/ || fas fa-folder-open
   
   #  时间轴: /archives/ || fas fa-archive
   # List||fas fa-list:
@@ -240,7 +240,7 @@ aside:
   mobile: true # display on mobile
   position: right # left or right
   display:
-    archive: true
+    archive: false
     tag: true
     category: true
   card_author:
@@ -272,7 +272,7 @@ aside:
     order: 1 # Sort of order. 1, asc for ascending; -1, desc for descending
     sort_order: # Don't modify the setting unless you know how it works
   card_archives:
-    enable: true
+    enable: false
     type: monthly # yearly or monthly
     format: MMMM YYYY # eg: YYYY年MM月
     order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
@@ -653,7 +653,7 @@ index_top_img_height: 360px
 # The user interface setting of category and tag page (category和tag頁的UI設置)
 # index - same as Homepage UI (index 值代表 UI將與首頁的UI一樣)
 # default - same as archives UI 默認跟archives頁面UI一樣
-category_ui: # 留空或 index
+category_ui: index # 留空或 index
 tag_ui: # 留空或 index
 
 # Website Background (設置網站背景)
