@@ -26,6 +26,7 @@ menu:
     今日油价: /pages/todayOil/ || fas fa-inbox
     便民查询: /pages/query/ || fas fa-times
     壁纸合集: /pages/gallery/ || fas fa-images
+  商城领券: /pages/yhq/ || fas fa-heart
   标签: /tags/ || fas fa-tags
   # 分类: /categories/ || fas fa-folder-open
   
