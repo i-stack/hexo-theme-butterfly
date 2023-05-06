@@ -5,7 +5,7 @@
 nav:
   logo: # image
   display_title: true
-  fixed: false # fixed navigation bar
+  fixed: true # fixed navigation bar
 
 # Menu 目錄
 menu:
@@ -328,7 +328,7 @@ readmode: true
 
 # dark mode
 darkmode:
-  enable: true
+  enable: false
   # Toggle Button to switch dark/light mode
   button: true
   # Switch dark/light mode automatically (自動切換 dark mode和 light mode)
@@ -660,10 +660,10 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: #'#121212CC' #/'#efefef' # url(https://static.runoob.com/images/demo/demo1.jpg)
+background: # '#1375AE' #rgba(13,135,127, 1) #rgba(247, 149, 51, 0.1) 0,rgba(243, 112, 85, 0.1) 15%,rgba(239, 78, 123, 0.1) 30%,rgba(161, 102, 171, 0.1) 44%,rgba(80, 115, 184, 0.1) 58%,rgba(16, 152, 173, 0.1) 72%,rgba(7, 179, 155, 0.1) 86%,rgba(109, 186, 130, 0.1) 100% # url(https://static.runoob.com/images/demo/demo1.jpg)
 
 # Footer Background
-footer_bg: false
+footer_bg: true
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
 rightside-bottom:
@@ -685,12 +685,12 @@ activate_power_mode:
 # canvas_ribbon (靜止彩帶背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: true
+  enable: false
   size: 150
   alpha: 0.6
   zIndex: -1
-  click_to_change: true
-  mobile: true
+  click_to_change: false
+  mobile: false
 
 # Fluttering Ribbon (動態彩帶)
 canvas_fluttering_ribbon:
@@ -720,7 +720,7 @@ click_heart:
 
 # Mouse click effects: words (鼠標點擊效果: 文字)
 ClickShowText:
-  enable: true
+  enable: false
   text:
     - I
     - LOVE
@@ -862,8 +862,8 @@ aplayerInject:
 # position 彈窗位置
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: false
-  position: bottom-left
+  enable: true
+  position: top-center
   bg_light: '#49b1f5' # The background color of Toast Notification in light mode
   bg_dark: '#1f1f1f' # The background color of Toast Notification in dark mode
 
@@ -917,9 +917,10 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <link rel="stylesheet" href="/css/transpancy.css">
-    - <link rel="stylesheet" href="/css/background.css">
-    - <link rel="stylesheet" href="/css/themeModel.css">
+    # - <link rel="stylesheet" href="/css/transpancy.css">
+    - <link rel="stylesheet" href="/css/custom.css">
+    # - <link rel="stylesheet" href="/css/background.css">
+    # - <link rel="stylesheet" href="/css/themeModel.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     #  - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
