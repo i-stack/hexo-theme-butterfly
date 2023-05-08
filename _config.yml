@@ -68,13 +68,13 @@ avatar:
   effect: false
 
 # Disable all banner image
-disable_top_img: true
+disable_top_img: false
 
 # The banner image of home page
 index_img:
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: /images/bg_image.jpg
+default_top_img: 
 
 # The banner image of archive page
 archive_img:
@@ -227,7 +227,7 @@ noticeOutdate:
 footer:
   owner:
     enable: true
-    since: 2020
+    since: 2022
   custom_text:
   copyright: true # Copyright of theme and framework
 
@@ -284,6 +284,8 @@ aside:
     post_count: true
     last_push_date: true
     sort_order: # Don't modify the setting unless you know how it works
+  card_calendar:
+    enable: true
 
 # busuanzi count for PV / UV in site
 # 訪問人數
@@ -660,7 +662,7 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: # '#1375AE' #rgba(13,135,127, 1) #rgba(247, 149, 51, 0.1) 0,rgba(243, 112, 85, 0.1) 15%,rgba(239, 78, 123, 0.1) 30%,rgba(161, 102, 171, 0.1) 44%,rgba(80, 115, 184, 0.1) 58%,rgba(16, 152, 173, 0.1) 72%,rgba(7, 179, 155, 0.1) 86%,rgba(109, 186, 130, 0.1) 100% # url(https://static.runoob.com/images/demo/demo1.jpg)
+background: url("../images/bg_image.jpg") # url("../images/bg_img.jpg") #url(https://static.runoob.com/images/demo/demo1.jpg)
 
 # Footer Background
 footer_bg: true
@@ -918,13 +920,20 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/css/transpancy.css">
-    - <link rel="stylesheet" href="/css/custom.css">
+    - <link rel="stylesheet" href="/static/css/custom.css">
     # - <link rel="stylesheet" href="/css/background.css">
     # - <link rel="stylesheet" href="/css/themeModel.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     #  - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
     # - <script src="xxxx"></script>
+    # <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    # <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/footer.js"></script>
+
+    <script src="/js/calendar.js"></script>
+    <script src="/js/languages.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
