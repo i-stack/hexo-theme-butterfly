@@ -12,8 +12,8 @@ menu:
   首页: / || fas fa-home
   资源分享 || fas fa-leaf:
     源码分享: /categories/源码资源/ || fas fa-tree
-    商业案例: /categories/商业案例/ || fas fa-key
-    课程分享: /categories/课程资源/ || fas fa-file
+    # 商业案例: /categories/商业案例/ || fas fa-key
+    # 课程分享: /categories/课程资源/ || fas fa-file
     项目资源: /categories/项目资源/ || fas fa-train
   技术教程: /categories/技术教程/ || fas fa-archive
   读书笔记 || fas fa-book:
@@ -53,28 +53,28 @@ code_word_wrap: false
 social:
   fab fa-github: https://github.com/i-stack || Github
   fas fa-envelope: mailto:shoubing.stack@gmail.com || Email
-  fab fa-weixin: /images/connectionQR/wechat.jpeg || 微信
-  fab fa-qq: /images/connectionQR/qq.jpeg || QQ
+  fab fa-weixin: https://data.freelibrary.top/img/connectionQR/wechat.jpeg || 微信
+  fab fa-qq: https://data.freelibrary.top/img/connectionQR/qq.jpeg || QQ
 
 # Image (圖片設置)
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /images/icon.png
+favicon: https://data.freelibrary.top/img/icon.png
 
 # Avatar (頭像)
 avatar:
-  img: /images/head.jpeg
+  img: https://data.freelibrary.top/img/head.jpeg
   effect: false
 
 # Disable all banner image
 disable_top_img: false
 
 # The banner image of home page
-index_img: /images/bg_image.jpg  # https://img.zsyyblog.com/banner/default_banner1.webp # /images/bg_img.jpg
+index_img: https://data.freelibrary.top/img/bg_image.jpg  # https://img.zsyyblog.com/banner/default_banner1.webp # https://data.freelibrary.top/img/bg_img.jpg
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: /images/bg_image.jpg
+default_top_img: https://data.freelibrary.top/img/bg_image.jpg
 
 # The banner image of archive page
 archive_img:
@@ -185,10 +185,10 @@ post_copyright:
 reward:
   enable: true
   QR_code:
-    - img: /images/payQR/wechat.png
+    - img: https://data.freelibrary.top/img/payQR/wechat.png
       link:
       text: wechat
-    - img: /images/payQR/alipay.png
+    - img: https://data.freelibrary.top/img/payQR/alipay.png
       link:
       text: alipay
 
@@ -662,7 +662,7 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: # url(https://moonshuo.cn/css/bg.jpg) # url("../images/bg_image.jpg") # url("../images/bg_img.jpg") #url(https://static.runoob.com/images/demo/demo1.jpg)
+background: # url(https://moonshuo.cn/css/bg.jpg) # url("..https://data.freelibrary.top/img/bg_image.jpg") # url("..https://data.freelibrary.top/img/bg_img.jpg") #url(https://static.runoob.comhttps://data.freelibrary.top/img/demo/demo1.jpg)
 
 # Footer Background
 footer_bg: true
