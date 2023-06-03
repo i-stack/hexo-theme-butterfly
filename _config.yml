@@ -12,7 +12,7 @@ menu:
   首页: / || fas fa-home
   资源分享 || fas fa-leaf:
     源码分享: /categories/源码资源/ || fas fa-tree
-    # 商业案例: /categories/商业案例/ || fas fa-key
+    商业案例: /categories/商业案例/ || fas fa-key
     # 课程分享: /categories/课程资源/ || fas fa-file
     项目资源: /categories/项目资源/ || fas fa-train
   技术教程: /categories/技术教程/ || fas fa-archive
